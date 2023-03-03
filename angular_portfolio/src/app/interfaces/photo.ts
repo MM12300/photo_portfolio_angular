@@ -1,4 +1,5 @@
 export interface Photo {
   title : string,
-  src: "string",
+  src: string,
+  categories: string,
 }

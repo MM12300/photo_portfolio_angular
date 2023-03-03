@@ -1,18 +1,22 @@
 [
   {
-    "title" : "Events",
-    "src": "assets/photos/home/Accueil-001.jpg"
+    "title" : "Expo \"India\"",
+    "src": "assets/photos/home/Accueil-001.jpg",
+    "categories" : "expo"
+  },
+  {
+    "title" : "Saddhus",
+    "src": "assets/photos/home/Accueil-002.jpg",
+    "categories": "saddhus"
+  },
+  {
+    "title" : "Setmana Santa",
+    "src": "assets/photos/home/Accueil-003.jpg",
+    "categories": "setmanaSanta"
   },
   {
     "title" : "Events",
-    "src": "assets/photos/home/Accueil-002.jpg"
-  },
-  {
-    "title" : "Events",
-    "src": "assets/photos/home/Accueil-003.jpg"
-  },
-  {
-    "title" : "Events",
-    "src": "assets/photos/home/Accueil-004.jpg"
+    "src": "assets/photos/home/Accueil-004.jpg",
+    "categories": "events"
   }
 ]
