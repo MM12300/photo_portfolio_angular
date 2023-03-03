@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { CardHomeComponent } from './card-home/card-home.component';
 import {HttpClientModule} from "@angular/common/http";
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {HttpClientModule} from "@angular/common/http";
     HomeComponent,
     FooterComponent,
     HeaderComponent,
-    CardHomeComponent
+    CardHomeComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

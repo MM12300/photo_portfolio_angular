@@ -58,3 +58,12 @@ a{
   text-decoration: none;
   justify-content: center;
 }
+details{
+  cursor: pointer;
+}
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}

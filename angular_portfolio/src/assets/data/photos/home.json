@@ -2,21 +2,21 @@
   {
     "title" : "Expo \"India\"",
     "src": "assets/photos/home/Accueil-001.jpg",
-    "categories" : "expo"
+    "category" : "expo"
   },
   {
     "title" : "Saddhus",
     "src": "assets/photos/home/Accueil-002.jpg",
-    "categories": "saddhus"
+    "category": "saddhus"
   },
   {
     "title" : "Setmana Santa",
     "src": "assets/photos/home/Accueil-003.jpg",
-    "categories": "setmanaSanta"
+    "category": "setmanaSanta"
   },
   {
     "title" : "Events",
     "src": "assets/photos/home/Accueil-004.jpg",
-    "categories": "events"
+    "category": "events"
   }
 ]

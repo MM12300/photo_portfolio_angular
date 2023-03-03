@@ -1,16 +1,17 @@
 <header>
   <div class="header-top">
-    <h1><a href="index.html">ψ MATTHIEU M ψ PHOTOGRAPHIE ψ</a></h1>
+    <a routerLink=""><h1>ψ MATTHIEU M ψ PHOTOGRAPHIE ψ</h1></a>
     <details>
       <div class="menu">
-        <a href="index.html">Accueil</a>
-        <a href="./pages/expo1.html">Expo "India"</a>
-        <a href="./pages/events.html">Events</a>
-        <a href="./pages/kumbh.html">Sadhus</a>
-        <a href="./pages/setmana.html">Setmana Santa Festival</a>
-        <a href="mailto: contact@matthieu-m.com">Contact</a>
+        <a [routerLink]="">Accueil</a>
+        <a *ngFor="let category of categories" [routerLink]="['/gallery/', category]">{{category}}</a>
+<!--        <a >Expo "India"</a>-->
+<!--        <a href="./pages/events.html">Events</a>-->
+<!--        <a href="./pages/kumbh.html">Sadhus</a>-->
+<!--        <a href="./pages/setmana.html">Setmana Santa Festival</a>-->
+<!--        <a href="mailto: contact@matthieu-m.com">Contact</a>-->
       </div>
-      <summary><img id="top" src="assets/icons/menu.svg" alt="menuicon"></summary>
+      <summary><img src="assets/icons/menu.svg" alt="menuicon"></summary>
     </details>
   </div>
 </header>

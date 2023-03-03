@@ -40,3 +40,27 @@ header {
 .header-bottom{
   width: 30%;
 }
+
+details .menu{
+  font-family:modernsans-, serif;
+  position: absolute;
+  color : #e1e2e1;
+  background-color : #282c34;
+  top:4%;
+  right:8%;
+  font-size: 16px;
+}
+.menu a{
+  text-transform: uppercase;
+  font-size: 36px;
+  color : #e1e2e1;
+  padding:20px;
+  border-bottom: 2px white solid;
+}
+.menu a:hover{
+  background-color : #e1e2e1;
+  color : #282c34;
+}
+.menu a:last-child{
+  border : 0;
+}
