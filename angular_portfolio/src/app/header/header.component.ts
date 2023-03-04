@@ -13,8 +13,6 @@ export class HeaderComponent {
   constructor(private _photoService: PhotosService) {
     this._photoService.getPhotos("home").subscribe((res:Photo[])=>{
      this.categories = res.map(photo => photo.category);
-     console.log(res);
-     console.log(this.categories);
     })
   }
 }
