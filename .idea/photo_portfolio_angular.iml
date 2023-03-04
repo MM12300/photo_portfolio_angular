@@ -3,7 +3,6 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <excludeFolder url="file://$MODULE_DIR$/angular_portfolio/dist" />
       <excludeFolder url="file://$MODULE_DIR$/angular_portfolio/tmp" />
     </content>
     <orderEntry type="inheritedJdk" />
