@@ -1,9 +1,7 @@
-<div>
-    <section class="grid-portrait">
-        <app-card-photo *ngFor="let photoPortrait of photosPortraitFormat" [photo]="photoPortrait"></app-card-photo>
-    </section>
-    <section class="grid-landscape">
-        <app-card-photo *ngFor="let photoLandscape of photosLandscapeFormat" [photo]="photoLandscape"></app-card-photo>
-    </section>
-</div>
+<section class="grid-portrait">
+    <app-card-photo *ngFor="let photoPortrait of photosPortraitFormat" [photo]="photoPortrait"></app-card-photo>
+</section>
+<section class="grid-landscape">
+    <app-card-photo *ngFor="let photoLandscape of photosLandscapeFormat" [photo]="photoLandscape"></app-card-photo>
+</section>
 

@@ -39,13 +39,13 @@
     app-gallery{
         .grid-portrait, .grid-landscape {
             grid-template-columns: 1fr !important;
+            grid-gap: 8px !important;
+            margin: 0 !important;
+            padding: 0 !important;
         }
         .grid-portrait img, .grid-landscape img{
             width: 100% !important;
         }
-
     }
-
-
 }
 
