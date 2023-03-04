@@ -1,13 +1,14 @@
-import {Component, OnChanges, OnInit} from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {PhotosService} from "../services/photos.service";
 import {Photo} from "../interfaces/photo";
-import {ActivatedRoute, ParamMap, Router} from "@angular/router";
+import {ActivatedRoute, ParamMap} from "@angular/router";
 
 
 @Component({
     selector: 'app-gallery',
     templateUrl: './gallery.component.html',
-    styleUrls: ['./gallery.component.scss']
+    styleUrls: ['./gallery.component.scss'],
+    encapsulation: ViewEncapsulation.None
 })
 export class GalleryComponent implements OnInit {
     public category: string;

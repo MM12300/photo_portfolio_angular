@@ -3,7 +3,7 @@
         <a [routerLink]="['/']"><h1>ψ MATTHIEU M ψ PHOTOGRAPHIE ψ</h1></a>
         <details>
             <div class="menu">
-                <a [routerLink]="">Accueil</a>
+                <a [routerLink]="['/']">Accueil</a>
                 <a *ngFor="let category of categories" [routerLink]="['/gallery/', category]">{{category}}</a>
             </div>
             <summary><img src="assets/icons/menu.svg" alt="menuicon"></summary>

@@ -3,12 +3,14 @@
     grid-auto-rows: minmax(100px, auto);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 0 auto 25px auto;
+    margin: 20px auto 25px auto;
     width: 100%;
     text-align: center;
     place-items: center;
 
     app-card-photo {
+        display: flex;
+        flex-direction: column;
         img {
             width: 20vw;
         }
@@ -19,7 +21,7 @@
     grid-gap: 30px;
     grid-auto-rows: minmax(100px, auto);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto 25px auto;
     width: 100%;
     text-align: center;
@@ -27,7 +29,11 @@
     padding-top: 25px;
 
     app-card-photo {
-
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 30vw;
+        }
     }
 }
 
