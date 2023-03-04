@@ -11,7 +11,6 @@ import {CardHomeComponent} from './card-home/card-home.component';
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {GalleryComponent} from './gallery/gallery.component';
 import {CardPhotoComponent} from './card-photo/card-photo.component';
-import { SpinnerComponent } from './spinner/spinner.component';
 import {LoadingInterceptor} from "./loading.interceptor";
 
 @NgModule({
@@ -23,7 +22,6 @@ import {LoadingInterceptor} from "./loading.interceptor";
         CardHomeComponent,
         GalleryComponent,
         CardPhotoComponent,
-        SpinnerComponent
     ],
     imports: [
         BrowserModule,
