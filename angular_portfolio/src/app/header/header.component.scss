@@ -7,7 +7,7 @@ header {
 }
 
 .header-top {
-    background-color: #000a12;
+    background-color: #000000;
     color: white;
     font-family: "upheavtt", serif;
     display: flex;
@@ -38,7 +38,7 @@ header {
 details .menu {
     font-family: modernsans-, serif;
     position: absolute;
-    color: #e1e2e1;
+    color: #FFFFFF;
     background-color: rgba(40,44,52,0.95);
     top: 50%;
     right: 3%;
@@ -48,14 +48,14 @@ details .menu {
 .menu a {
     text-transform: uppercase;
     font-size: 36px;
-    color: #e1e2e1;
+    color: #FFFFFF;
     padding: 20px;
     border-bottom: 2px white solid;
 }
 
 .menu a:hover {
-    background-color: #e1e2e1;
-    color: #282c34;
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 .menu a:last-child {
