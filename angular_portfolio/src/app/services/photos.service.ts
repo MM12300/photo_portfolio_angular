@@ -11,7 +11,11 @@ export class PhotosService {
   constructor(private http: HttpClient) {
   }
 
-  getPhotos(category : string): Observable<Photo[]> {
+  /**
+   * Get photo data (.json)
+   * @param category name of the file
+   */
+  getPhotos(category: string): Observable<Photo[]> {
     return this.http.get<Photo[]>(`assets/data/photos/${category}.json`).pipe();
   }
 }
