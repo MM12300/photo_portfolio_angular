@@ -1,65 +1,74 @@
-.card-home{
-  display: flex;
-  flex-direction: column;
-  h2{
-    margin:auto auto auto 20px;
-    width: 100%;
-    a{
-      font-family: modernsans-, serif;
-      color:#e1e2e1;
-      display: flex;
-      font-size: 36px;
-      padding: 20px 0;
-      height: 30px;
-      border-radius: 5px;
-      background-color: rgba(0,0,0,0);
-      text-transform: uppercase;
+.card-home {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        margin: auto auto auto 20px;
+        width: 100%;
+
+        a {
+            font-family: modernsans-, serif;
+            color: #e1e2e1;
+            display: flex;
+            font-size: 36px;
+            padding: 20px 0;
+            height: 30px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0);
+            text-transform: uppercase;
+        }
     }
-  }
-}
-.card-home-div {
-  padding: 20px 0;
-  margin:auto;
-}
-.card-home-div-content {
-  p{
-    text-align: center;
-    font-size: 14px;
-  }
-}
-.card-home-div{
-  img {
-    width: 35vw;
-    padding: 10px;
-  }
-}
-.card-content {
-  width: 41vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #000a12;
-  padding : 50px 25px 50px 25px;
-}
-.card-content {
-  a {
-    transition: font-size 0.2s ease-in-out;
-  }
 }
 
-.title-bar{
-  height:2px;
-  background-color:white;
-  width: 66%;
-  margin: auto;
-  display: block;
+.card-home-div {
+    padding: 20px 0;
+    margin: auto;
 }
-.card-content:hover{
-  .title-bar{
-    width:80%;
-  }
-  h2 a{
-    font-size: 42px;
-  }
+
+.card-home-div-content {
+    p {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+.card-home-div {
+    img {
+        width: 35vw;
+        padding: 10px;
+    }
+}
+
+.card-content {
+    width: 41vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000a12;
+    padding: 50px 25px 50px 25px;
+}
+
+.card-content {
+    a {
+        transition: font-size 0.2s ease-in-out;
+    }
+}
+
+.title-bar {
+    height: 2px;
+    background-color: white;
+    width: 66%;
+    margin: auto;
+    display: block;
+}
+
+.card-content:hover {
+    .title-bar {
+        width: 80%;
+    }
+
+    h2 a {
+        font-size: 42px;
+    }
 }
 

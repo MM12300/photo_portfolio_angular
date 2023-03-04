@@ -1,6 +1,6 @@
 export interface Photo {
-  title : string,
-  src: string,
-  category: string,
-  format? : string,
+    title: string,
+    src: string,
+    category: string,
+    format?: string,
 }

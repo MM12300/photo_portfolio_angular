@@ -1,4 +1,3 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
@@ -21,11 +20,11 @@ $angular_portfolio-warn: mat.define-palette(mat.$red-palette);
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
 $angular_portfolio-theme: mat.define-light-theme((
-  color: (
-    primary: $angular_portfolio-primary,
-    accent: $angular_portfolio-accent,
-    warn: $angular_portfolio-warn,
-  )
+    color: (
+        primary: $angular_portfolio-primary,
+        accent: $angular_portfolio-accent,
+        warn: $angular_portfolio-warn,
+    )
 ));
 
 // Include theme styles for core and each component used in your app.
@@ -36,34 +35,41 @@ $angular_portfolio-theme: mat.define-light-theme((
 /* You can add global styles to this file, and also import other style files */
 
 html, body {
-  height: 100%;
+    height: 100%;
 }
+
 body {
-  margin: 0;
-  display:flex;
-  flex-direction:column;
-  font-family: Lora-, serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Lora-, serif;
 }
-p{
-  margin:0;
+
+p {
+    margin: 0;
 }
-h2{
-  font-family: "upheavtt", serif;
-  margin:0;
-  font-size:50px;
+
+h2 {
+    font-family: "upheavtt", serif;
+    margin: 0;
+    font-size: 50px;
 }
-a{
-  display:flex;
-  color:#e1e2e1;
-  text-decoration: none;
-  justify-content: center;
+
+a {
+    display: flex;
+    color: #e1e2e1;
+    text-decoration: none;
+    justify-content: center;
 }
-details{
-  cursor: pointer;
+
+details {
+    cursor: pointer;
 }
+
 details > summary {
-  list-style: none;
+    list-style: none;
 }
+
 details > summary::-webkit-details-marker {
-  display: none;
+    display: none;
 }
