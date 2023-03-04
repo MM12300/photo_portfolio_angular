@@ -1,0 +1,80 @@
+[
+    {
+        "title": "Ujjain",
+        "src": "assets/photos/expo/Expo1-001.jpg",
+        "category": "expo",
+        "format": "portrait"
+    },
+    {
+        "title": "Ganesh",
+        "src": "assets/photos/expo/Expo1-002.jpg",
+        "category": "expo",
+        "format": "portrait"
+    },
+    {
+        "title": "Rangoli",
+        "src": "assets/photos/expo/Expo1-003.jpg",
+        "category": "expo",
+        "format": "portrait"
+    },
+    {
+        "title": "Kali",
+        "src": "assets/photos/expo/Expo1-004.jpg",
+        "category": "expo",
+        "format": "portrait"
+    },
+    {
+        "title": "Mysore",
+        "src": "assets/photos/expo/Expo1-005.jpg",
+        "category": "expo",
+        "format": "portrait"
+    },
+    {
+        "title": "ganga",
+        "src": "assets/photos/expo/Expo1-006.jpg",
+        "category": "expo",
+        "format": "portrait"
+    },
+    {
+        "title": "chai",
+        "src": "assets/photos/expo/Expo1-007.jpg",
+        "category": "expo",
+        "format": "portrait"
+    },
+    {
+        "title": "devi",
+        "src": "assets/photos/expo/Expo1-008.jpg",
+        "category": "expo",
+        "format": "portrait"
+    },
+    {
+        "title": "buddha",
+        "src": "assets/photos/expo/Expo1-009.jpg",
+        "category": "expo",
+        "format": "portrait"
+    },
+    {
+        "title": "adiyogi",
+        "src": "assets/photos/expo/Expo1-010.jpg",
+        "category": "expo",
+        "format": "portrait"
+    },
+    {
+        "title": "kumbh",
+        "src": "assets/photos/expo/Expo1-011.jpg",
+        "category": "expo",
+        "format": "landscape"
+    },
+    {
+        "title": "thiru",
+        "src": "assets/photos/expo/Expo1-012.jpg",
+        "category": "expo",
+        "format": "landscape"
+    },
+    {
+        "title": "larki",
+        "src": "assets/photos/expo/Expo1-013.jpg",
+        "category": "expo",
+        "format": "landscape"
+    }
+]

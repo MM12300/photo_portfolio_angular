@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Rama",
+        "src": "assets/photos/kumbh/Kumbh-001.jpg",
+        "category": "kumbh",
+        "format": "portrait"
+    },
+    {
+        "title": "Camel",
+        "src": "assets/photos/kumbh/Kumbh-002.jpg",
+        "category": "kumbh",
+        "format": "portrait"
+    },
+    {
+        "title": "Balu",
+        "src": "assets/photos/kumbh/Kumbh-003.jpg",
+        "category": "kumbh",
+        "format": "portrait"
+    },
+    {
+        "title": "Mute",
+        "src": "assets/photos/kumbh/Kumbh-004.jpg",
+        "category": "kumbh",
+        "format": "portrait"
+    },
+    {
+        "title": "Chooha",
+        "src": "assets/photos/kumbh/Kumbh-005.jpg",
+        "category": "kumbh",
+        "format": "portrait"
+    },
+    {
+        "title": "standing",
+        "src": "assets/photos/kumbh/Kumbh-006.jpg",
+        "category": "kumbh",
+        "format": "portrait"
+    },
+    {
+        "title": "mahakal",
+        "src": "assets/photos/kumbh/Kumbh-007.jpg",
+        "category": "kumbh",
+        "format": "portrait"
+    },
+    {
+        "title": "daust 1",
+        "src": "assets/photos/kumbh/Kumbh-008.jpg",
+        "category": "kumbh",
+        "format": "portrait"
+    },
+    {
+        "title": "daust 2",
+        "src": "assets/photos/kumbh/Kumbh-009.jpg",
+        "category": "kumbh",
+        "format": "portrait"
+    },
+    {
+        "title": "mahakala",
+        "src": "assets/photos/kumbh/Kumbh-010.jpg",
+        "category": "kumbh",
+        "format": "portrait"
+    }
+]
