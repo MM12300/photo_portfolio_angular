@@ -8,10 +8,9 @@ import {HomeComponent} from './home/home.component';
 import {FooterComponent} from './footer/footer.component';
 import {HeaderComponent} from './header/header.component';
 import {CardHomeComponent} from './card-home/card-home.component';
-import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
+import { HttpClientModule} from "@angular/common/http";
 import {GalleryComponent} from './gallery/gallery.component';
 import {CardPhotoComponent} from './card-photo/card-photo.component';
-import {LoadingInterceptor} from "./loading.interceptor";
 
 @NgModule({
     declarations: [
@@ -30,9 +29,6 @@ import {LoadingInterceptor} from "./loading.interceptor";
         HttpClientModule,
     ],
     providers: [
-        {
-            provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true
-        }
     ],
     bootstrap: [AppComponent]
 })
