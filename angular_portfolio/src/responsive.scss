@@ -1,0 +1,42 @@
+@media (min-width: 100px) and (max-width: 968px) {
+    app-header{
+        .header-top{
+            padding: 0 !important;
+            img{
+                width: 50px !important;
+                height: 50px !important;
+            }
+        }
+        h1{
+            font-size: 25px !important;
+            text-align: center !important;
+        }
+        .menu a{
+            font-size: 24px !important;
+            padding: 15px !important;
+        }
+
+    }
+    app-home{
+        .header-bottom {
+            width: 100% !important;
+        }
+        main{
+            grid-template-columns: 1fr !important;
+        }
+        .card-content{
+            width: 80vw !important;
+            padding: 15px 25px 15px 25px !important;
+        }
+        .card-content:hover h2 a, .card-content h2 a{
+            font-size: 28px !important;
+        }
+        .card-home-div img{
+            width:75vw !important;
+            padding:0 !important;
+        }
+    }
+
+
+}
+
