@@ -24,5 +24,5 @@ jobs:
         server: ${{ secrets.SERVER_URL }}
         username: ${{ secrets.USER_NAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: angular_portfolio/dist/
+        local-dir: ./dist/
         server-dir:  ${{ secrets.LOCAL_FOLDER }}
