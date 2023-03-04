@@ -1,10 +1,10 @@
 <header>
     <div class="header-top">
         <a [routerLink]="['/']"><h1>ψ MATTHIEU M ψ PHOTOGRAPHIE ψ</h1></a>
-        <details>
+        <details #details>
             <div class="menu">
-                <a [routerLink]="['/']">Accueil</a>
-                <a *ngFor="let category of categories" [routerLink]="['/gallery/', category]">{{category}}</a>
+                <a [routerLink]="['/']" (click)="closeDetails()">Accueil</a>
+                <a *ngFor="let category of categories" [routerLink]="['/gallery/', category]" (click)="closeDetails()">{{category}}</a>
             </div>
             <summary><img src="assets/icons/menu.svg" alt="menuicon"></summary>
         </details>
