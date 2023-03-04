@@ -8,9 +8,11 @@ import {HomeComponent} from './home/home.component';
 import {FooterComponent} from './footer/footer.component';
 import {HeaderComponent} from './header/header.component';
 import {CardHomeComponent} from './card-home/card-home.component';
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {GalleryComponent} from './gallery/gallery.component';
 import {CardPhotoComponent} from './card-photo/card-photo.component';
+import { SpinnerComponent } from './spinner/spinner.component';
+import {LoadingInterceptor} from "./loading.interceptor";
 
 @NgModule({
     declarations: [
@@ -20,7 +22,8 @@ import {CardPhotoComponent} from './card-photo/card-photo.component';
         HeaderComponent,
         CardHomeComponent,
         GalleryComponent,
-        CardPhotoComponent
+        CardPhotoComponent,
+        SpinnerComponent
     ],
     imports: [
         BrowserModule,
@@ -28,7 +31,11 @@ import {CardPhotoComponent} from './card-photo/card-photo.component';
         BrowserAnimationsModule,
         HttpClientModule,
     ],
-    providers: [],
+    providers: [
+        {
+            provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true
+        }
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {
