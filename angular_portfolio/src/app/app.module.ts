@@ -26,7 +26,7 @@ import {CardPhotoComponent} from './card-photo/card-photo.component';
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        HttpClientModule
+        HttpClientModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

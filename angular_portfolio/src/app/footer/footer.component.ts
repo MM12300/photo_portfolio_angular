@@ -6,5 +6,18 @@ import {Component} from '@angular/core';
     styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
+    constructor() {
+    }
+
+    /**
+     * Top to Bottomn arrow
+     */
+    public bottomToTop(): void {
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
 
 }
