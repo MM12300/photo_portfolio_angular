@@ -36,6 +36,15 @@
             padding:0 !important;
         }
     }
+    app-gallery{
+        .grid-portrait, .grid-landscape {
+            grid-template-columns: 1fr !important;
+        }
+        .grid-portrait img, .grid-landscape img{
+            width: 100% !important;
+        }
+
+    }
 
 
 }
