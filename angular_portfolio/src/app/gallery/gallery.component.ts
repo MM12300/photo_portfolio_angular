@@ -15,7 +15,7 @@ export class GalleryComponent implements OnInit {
     public photosFromCategories: Photo[];
     public photosLandscapeFormat: Photo[];
     public photosPortraitFormat: Photo[];
-    public photoFetched: boolean;
+    public photoFetched: boolean = false;
 
     constructor(
         private _photoService: PhotosService,
@@ -26,19 +26,12 @@ export class GalleryComponent implements OnInit {
     ngOnInit(): void {
         this.route.paramMap.subscribe((params: ParamMap) => {
             this.category = params.get('category');
-            console.log(this.category);
-
+            this.photoFetched = false;
             this._photoService.getPhotos(this.category).subscribe(photos => {
                 this.photosFromCategories = photos;
-                console.log(this.photosFromCategories);
                 this.photosPortraitFormat = this.photosFromCategories.filter(photo => photo.format === "portrait");
                 this.photosLandscapeFormat = this.photosFromCategories.filter(photo => photo.format === "landscape");
-                console.log(this.photosPortraitFormat);
-                console.log(this.photosLandscapeFormat);
                 this.photoFetched = true;
-                this.photosLandscapeFormat.forEach(photo => {
-                    console.log(photo.src);
-                })
             })
         });
     }
