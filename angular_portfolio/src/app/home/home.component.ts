@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {Photo} from "../interfaces/photo";
-import {HttpClient} from "@angular/common/http";
 import {PhotosService} from "../services/photos.service";
 
 @Component({
