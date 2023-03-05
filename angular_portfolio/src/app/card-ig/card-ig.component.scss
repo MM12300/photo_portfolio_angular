@@ -1,0 +1,11 @@
+article {
+    display : flex;
+    flex-direction: row;
+    padding:20px;
+    p{
+        align-self:center;
+    }
+    img{
+        height:200px;
+    }
+}

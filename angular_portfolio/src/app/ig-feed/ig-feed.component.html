@@ -1,4 +1,4 @@
-<!--<div *ngIf="displayPage">-->
-<!--    <p *ngFor="let post of instaPosts" alt="test">{{post.caption}}</p>-->
-<!--</div>-->
+<div *ngFor="let post of instaPosts">
+    <app-card-ig [post]="post"></app-card-ig>
+</div>
 

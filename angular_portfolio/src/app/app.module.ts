@@ -13,6 +13,7 @@ import {GalleryComponent} from './gallery/gallery.component';
 import {CardPhotoComponent} from './card-photo/card-photo.component';
 import { IgFeedComponent } from './ig-feed/ig-feed.component';
 import { AboutComponent } from './about/about.component';
+import { CardIgComponent } from './card-ig/card-ig.component';
 
 @NgModule({
     declarations: [
@@ -25,6 +26,7 @@ import { AboutComponent } from './about/about.component';
         CardPhotoComponent,
         IgFeedComponent,
         AboutComponent,
+        CardIgComponent,
     ],
     imports: [
         BrowserModule,
