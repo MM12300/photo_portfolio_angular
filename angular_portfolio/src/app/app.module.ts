@@ -11,6 +11,8 @@ import {CardHomeComponent} from './card-home/card-home.component';
 import { HttpClientModule} from "@angular/common/http";
 import {GalleryComponent} from './gallery/gallery.component';
 import {CardPhotoComponent} from './card-photo/card-photo.component';
+import { IgFeedComponent } from './ig-feed/ig-feed.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
     declarations: [
@@ -21,6 +23,8 @@ import {CardPhotoComponent} from './card-photo/card-photo.component';
         CardHomeComponent,
         GalleryComponent,
         CardPhotoComponent,
+        IgFeedComponent,
+        AboutComponent,
     ],
     imports: [
         BrowserModule,
