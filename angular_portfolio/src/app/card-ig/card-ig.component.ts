@@ -18,9 +18,23 @@ export class CardIgComponent implements OnInit{
     }
 
     ngOnInit(): void {
-        let splitCaption:string[] = this.post.caption.split("#",2);
-        this.postTitle = splitCaption[0];
-        this.postHashtags = splitCaption[1];
+        const captionsplitted: string[] = this.splitCaption(this.post.caption)
+        this.postTitle = captionsplitted[0];
+        this.postHashtags = captionsplitted[1];
     }
 
+    public splitCaption(caption: string) {
+        const inputArray = caption.split(' ');
+        let string1 = '';
+        let string2 = '';
+        for (let i = 0; i < inputArray.length; i++) {
+            let word = inputArray[i];
+            if (word.includes('#')) {
+                string2 += word + ' ';
+            } else {
+                string1 += word + ' ';
+            }
+        }
+        return [string1.trim(), string2.trim()];
+    }
 }

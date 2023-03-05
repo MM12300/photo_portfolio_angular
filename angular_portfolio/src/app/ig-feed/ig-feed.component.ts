@@ -19,7 +19,6 @@ export class IgFeedComponent implements OnInit{
         this._igService.getIgUserInfos().subscribe(user=>{
             console.log(user);
             this._igService.getMediaArray(user).subscribe(mediaIncomplete =>{
-                console.log(mediaIncomplete);
                 let mediaIds = mediaIncomplete.data.map(data => data.id);
                 let mediaFull: igMedia[] = [];
 
@@ -34,7 +33,7 @@ export class IgFeedComponent implements OnInit{
                 // });
 
                 //Let's just get the 5 last results
-                for (let i = 0; i < 5; i++) {
+                for (let i = 0; i < 2; i++) {
                     const mediaId = mediaIds[i];
                     this._igService.getFullMedia(mediaId)
                         .pipe(concatMap(media => {
