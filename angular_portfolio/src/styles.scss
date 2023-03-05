@@ -73,3 +73,12 @@ details > summary {
 details > summary::-webkit-details-marker {
     display: none;
 }
+.section-title{
+        font-family: modernsans-, serif;
+        text-transform: uppercase;
+        padding: 1% 0 0 5%;
+        border-bottom: 3px solid black;
+        border-image-slice: 20% 50%;
+        margin-left: 10%;
+        margin-right: 50%;
+}
