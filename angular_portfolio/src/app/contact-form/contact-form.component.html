@@ -1,0 +1,11 @@
+<form [formGroup]="contactForm" (ngSubmit)="submitForm()" novalidate>
+    <mat-form-field>
+        <input matInput placeholder="Name" formControlName="name">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Name" formControlName="name">
+    </mat-form-field>
+    <button mat-flat-button color="primary" (submit)="submitForm()">Submit</button>
+</form>
+
+
