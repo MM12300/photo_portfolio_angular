@@ -1,16 +1,16 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit} from "@angular/core";
 import {InstagramService} from "../services/instagram.service";
 import {igMedia} from "../interfaces/instagram";
 import {concatMap} from "rxjs";
 
 @Component({
-  selector: 'app-ig-feed',
-  templateUrl: './ig-feed.component.html',
-  styleUrls: ['./ig-feed.component.scss']
+    selector: "app-ig-feed",
+    templateUrl: "./ig-feed.component.html",
+    styleUrls: ["./ig-feed.component.scss"]
 })
 export class IgFeedComponent implements OnInit{
     public instaPosts: igMedia[];
-    public displayPage: boolean=false;
+    public displayPage=false;
     constructor(public _igService: InstagramService) {
 
     }
@@ -19,8 +19,8 @@ export class IgFeedComponent implements OnInit{
         this._igService.getIgUserInfos().subscribe(user=>{
             console.log(user);
             this._igService.getMediaArray(user).subscribe(mediaIncomplete =>{
-                let mediaIds = mediaIncomplete.data.map(data => data.id);
-                let mediaFull: igMedia[] = [];
+                const mediaIds = mediaIncomplete.data.map(data => data.id);
+                const mediaFull: igMedia[] = [];
 
                 // Code that generates too many API calls and then block the API limit
                 // mediaIds.forEach(mediaId => {
@@ -43,9 +43,9 @@ export class IgFeedComponent implements OnInit{
                         .subscribe();
                 }
 
-                this.instaPosts = mediaFull
+                this.instaPosts = mediaFull;
                 this.displayPage = true;
-            })
+            });
         });
     }
 }

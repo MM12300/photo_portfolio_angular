@@ -1,13 +1,11 @@
-import {Component} from '@angular/core';
+import {Component} from "@angular/core";
 
 @Component({
-    selector: 'app-footer',
-    templateUrl: './footer.component.html',
-    styleUrls: ['./footer.component.scss']
+    selector: "app-footer",
+    templateUrl: "./footer.component.html",
+    styleUrls: ["./footer.component.scss"]
 })
 export class FooterComponent {
-    constructor() {
-    }
 
     /**
      * Top to Bottomn arrow
@@ -16,7 +14,7 @@ export class FooterComponent {
         window.scroll({
             top: 0,
             left: 0,
-            behavior: 'smooth'
+            behavior: "smooth"
         });
     }
 

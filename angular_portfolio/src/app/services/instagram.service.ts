@@ -1,11 +1,11 @@
-import {Injectable} from '@angular/core';
+import {Injectable} from "@angular/core";
 import {HttpClient, HttpParams} from "@angular/common/http";
-import {firstLongLifeToken} from "../../../secrets/secrets"
+import {firstLongLifeToken} from "../../../secrets/secrets";
 import {igMedia, igData, igUser} from "../interfaces/instagram";
 import {Observable} from "rxjs";
 
 @Injectable({
-    providedIn: 'root'
+    providedIn: "root"
 })
 export class InstagramService {
 
@@ -40,7 +40,7 @@ export class InstagramService {
      */
     public getIgUserInfos(): Observable<igUser> {
         const params = new HttpParams()
-            .set('fields', "id,username")
+            .set("fields", "id,username")
             .set("access_token", firstLongLifeToken);
         return this.http.get<igUser>("https://graph.instagram.com/me", {params: params});
     }
@@ -67,7 +67,7 @@ export class InstagramService {
             .set("fields", "media_url, caption");
         this.http.get<igMedia>(`https://graph.instagram.com/${media.id})`, {params: params}).subscribe((res: igMedia) => {
             mediaUrl = res.media_url;
-        })
+        });
         return mediaUrl;
     }
 

@@ -1,13 +1,13 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from "@angular/core";
 import {PhotosService} from "../services/photos.service";
 import {Photo} from "../interfaces/photo";
 import {ActivatedRoute, ParamMap} from "@angular/router";
 
 
 @Component({
-    selector: 'app-gallery',
-    templateUrl: './gallery.component.html',
-    styleUrls: ['./gallery.component.scss'],
+    selector: "app-gallery",
+    templateUrl: "./gallery.component.html",
+    styleUrls: ["./gallery.component.scss"],
     encapsulation: ViewEncapsulation.None
 })
 export class GalleryComponent implements OnInit {
@@ -15,7 +15,7 @@ export class GalleryComponent implements OnInit {
     public photosFromCategories: Photo[];
     public photosLandscapeFormat: Photo[];
     public photosPortraitFormat: Photo[];
-    public photoFetched: boolean = false;
+    public photoFetched = false;
 
     constructor(
         private _photoService: PhotosService,
@@ -25,7 +25,7 @@ export class GalleryComponent implements OnInit {
 
     ngOnInit(): void {
         this.route.paramMap.subscribe((params: ParamMap) => {
-            this.category = params.get('category');
+            this.category = params.get("category");
             this.photoFetched = false;
             this._photoService.getPhotos(this.category).subscribe(photos => {
                 this.photosFromCategories = photos;
@@ -34,7 +34,7 @@ export class GalleryComponent implements OnInit {
                 this.photoFetched = true;
                 this.category = photos[0].category;
                 console.log(photos[0].category);
-            })
+            });
         });
     }
 }
