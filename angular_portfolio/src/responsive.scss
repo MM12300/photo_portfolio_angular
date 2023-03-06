@@ -58,8 +58,11 @@
         article{
             flex-direction: column!important;
             img{
-                width: 100%;
-                padding-bottom: 10px;
+                width: 100%!important;
+                padding-bottom: 10px!important;
+            }
+            p{
+                font-size: 12px !important;
             }
         }
     }
