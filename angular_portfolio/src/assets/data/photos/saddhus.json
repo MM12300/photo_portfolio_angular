@@ -58,5 +58,17 @@
         "src": "assets/photos/kumbh/Kumbh-010.jpg",
         "category": "saddhus",
         "format": "portrait"
+    },
+    {
+        "title": "mahakala",
+        "src": "assets/photos/kumbh/Kumbh-011.jpg",
+        "category": "saddhus",
+        "format": "portrait"
+    },
+    {
+        "title": "sangam",
+        "src": "assets/photos/kumbh/Kumbh-012.jpg",
+        "category": "saddhus",
+        "format": "portrait"
     }
 ]

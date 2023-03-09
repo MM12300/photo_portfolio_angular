@@ -58,5 +58,11 @@
         "src": "assets/photos/events/Events-010.jpg",
         "category": "events",
         "format": "landscape"
+    },
+    {
+        "title": "festival",
+        "src": "assets/photos/events/Events-011.jpg",
+        "category": "events",
+        "format": "landscape"
     }
 ]

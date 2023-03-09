@@ -76,5 +76,17 @@
         "src": "assets/photos/expo/Expo1-013.jpg",
         "category": "expo \"india\"",
         "format": "landscape"
+    },
+    {
+        "title": "Maharashtra",
+        "src": "assets/photos/expo/Expo1-014.jpg",
+        "category": "expo \"india\"",
+        "format": "portrait"
+    },
+    {
+        "title": "larki",
+        "src": "assets/photos/expo/Expo1-015.jpg",
+        "category": "expo \"india\"",
+        "format": "portrait"
     }
 ]
