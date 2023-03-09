@@ -7,4 +7,8 @@ import {Component} from "@angular/core";
 })
 export class AppComponent {
     title = "angular_portfolio";
+
+    public changeTheme():void{
+        console.log("change theme");
+    }
 }
