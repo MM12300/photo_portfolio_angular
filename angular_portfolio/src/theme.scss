@@ -1,0 +1,77 @@
+@mixin theme($text-primary, $text-secondary, $background-primary, $background-secondary) {
+    a {
+        color: $text-primary;
+    }
+    .section-title {
+        color:$text-secondary;
+        border-bottom: 3px solid $background-secondary;
+    }
+    app-root{
+        background-color:$background-primary;
+    }
+    app-card-home {
+        .card-home {
+            a {
+                color: $text-primary;
+            }
+
+            .card-content {
+                background-color: $background-secondary;
+            }
+
+            .title-bar {
+                background-color: $text-primary;
+            }
+        }
+    }
+
+    app-card-ig {
+        article {
+            color: $text-primary;
+            background-color: $background-secondary
+        }
+    }
+    app-card-photo {
+        .legend {
+            background-color: $background-secondary;
+            color: $text-primary;
+        }
+
+    }
+    app-footer {
+        footer {
+            background-color: $background-secondary;
+            color: $text-primary;
+        }
+    }
+    main, app-footer{
+        background-color:$background-primary;
+    }
+    app-gallery{
+        section{
+            background-color:$background-primary;
+        }
+    }
+    app-header{
+        .header-top {
+            background-color: $background-secondary;
+            color: $text-primary;
+        }
+    }
+    app-home{
+        .header-bottom-div {
+            background-color: $background-secondary;
+        }
+    }
+
+
+}
+
+
+.light-theme {
+    @include theme(#FFFFFF, #000000, #FFFFFF, #000000);
+}
+
+.dark-theme {
+    @include theme(#E0E0E0, #B3B3B3, #282828, #121212)
+}

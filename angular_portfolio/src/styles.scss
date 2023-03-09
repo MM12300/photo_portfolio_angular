@@ -57,7 +57,6 @@ h2 {
 
 a {
     display: flex;
-    color: #FFFFFF;
     text-decoration: none;
     justify-content: center;
 }
@@ -77,7 +76,6 @@ details > summary::-webkit-details-marker {
         font-family: modernsans-, serif;
         text-transform: uppercase;
         padding: 1% 0 0 5%;
-        border-bottom: 3px solid black;
         border-image-slice: 20% 50%;
         margin: 0 50% 2% 10%;
 }

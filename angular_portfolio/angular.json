@@ -32,7 +32,8 @@
                         "styles": [
                             "src/styles.scss",
                             "src/fonts.scss",
-                            "src/responsive.scss"
+                            "src/responsive.scss",
+                            "src/theme.scss"
                         ],
                         "scripts": []
                     },
@@ -97,7 +98,8 @@
                         "styles": [
                             "src/styles.scss",
                             "src/fonts.scss",
-                            "src/responsive.scss"
+                            "src/responsive.scss",
+                            "src/theme.scss"
                         ],
                         "scripts": []
                     }
