@@ -12,7 +12,6 @@ export class InstagramService {
     public apiKeyPartOne = "IGQVJXX3ZAVOTJqTUd2TnE2SWt1c1JZALWQzT1NNUndWNE9xMC04UGZALVzcwTWR";
     public apiKeyPartTwo = "xdVFHdFRQRkpQTmpwd2J5VUFyZA2xrN0hpOE1ZALXBCZAWk0aFJVTGMxX2FxUC14T3dydEk0QkVrV0d3";
     constructor(private http: HttpClient) {
-        console.log(this.getApiKey());
     }
 
 
