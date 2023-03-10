@@ -33,7 +33,6 @@ export class GalleryComponent implements OnInit {
                 this.photosLandscapeFormat = this.photosFromCategories.filter(photo => photo.format === "landscape");
                 this.photoFetched = true;
                 this.category = photos[0].category;
-                console.log(photos[0].category);
             });
         });
     }
