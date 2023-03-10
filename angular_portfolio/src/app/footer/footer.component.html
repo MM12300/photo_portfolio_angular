@@ -1,8 +1,10 @@
 <footer>
     <div>
-        <img src="assets/icons/arrow_upward.svg" alt="arrow_upward" (click)="bottomToTop()">
-        <mat-slide-toggle (click)="toggleThemeEvent()"></mat-slide-toggle>
+             <img src="assets/icons/arrow_upward.svg" alt="arrow_upward" (click)="bottomToTop()">
+        <mat-slide-toggle #darkModeSwitch (click)="toggleThemeEvent()" [checked]="this.theme === 'dark-theme'">
+        </mat-slide-toggle>
     </div>
-    <a href="https://github.com/MM12300/photo_portfolio_angular" class="copyright">© Site conçu et développé par Matthieu M -
+    <a href="https://github.com/MM12300/photo_portfolio_angular" class="copyright">© Site conçu et développé par
+        Matthieu M -
         2022</a>
 </footer>

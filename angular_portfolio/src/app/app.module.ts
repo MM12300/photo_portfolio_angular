@@ -14,9 +14,10 @@ import {CardPhotoComponent} from "./card-photo/card-photo.component";
 import { IgFeedComponent } from "./ig-feed/ig-feed.component";
 import { AboutComponent } from "./about/about.component";
 import { CardIgComponent } from "./card-ig/card-ig.component";
-import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ContactFormComponent } from "./contact-form/contact-form.component";
 import {ReactiveFormsModule} from "@angular/forms";
 import {AngularMaterialModule} from "./angularMaterial.module";
+import {MatRippleModule} from "@angular/material/core";
 
 @NgModule({
     declarations: [
@@ -39,6 +40,7 @@ import {AngularMaterialModule} from "./angularMaterial.module";
         HttpClientModule,
         ReactiveFormsModule,
         AngularMaterialModule,
+        MatRippleModule,
     ],
     providers: [
     ],
