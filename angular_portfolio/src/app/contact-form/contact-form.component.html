@@ -1,11 +1,27 @@
+<h2 class="section-title">Contact</h2>
 <form [formGroup]="contactForm" (ngSubmit)="submitForm()" novalidate>
     <mat-form-field>
-        <input matInput placeholder="Name" formControlName="name">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email">
+        <mat-error *ngIf="this.contactForm.controls['email'].hasError('required') || this.contactForm.controls['email'].hasError('email')">
+            Veuillez indiquer un e-mail (valide)
+        </mat-error>
     </mat-form-field>
     <mat-form-field>
-        <input matInput placeholder="Name" formControlName="name">
+        <mat-label>Nom & Prénom</mat-label>
+        <input matInput formControlName="name">
+        <mat-error *ngIf="this.contactForm.controls['name'].hasError('required')">
+            Veuillez indiquer votre nom et prénom
+        </mat-error>
     </mat-form-field>
-    <button mat-flat-button color="primary" (submit)="submitForm()">Submit</button>
+    <mat-form-field>
+        <mat-label>Contenu de votre message</mat-label>
+        <textarea matInput formControlName="content"></textarea>
+        <mat-error *ngIf="this.contactForm.controls['content'].hasError('required')">
+            Veuillez donner un contenu à votre message
+        </mat-error>
+    </mat-form-field>
+    <button mat-flat-button color="primary" (submit)="submitForm()">Envoyer</button>
 </form>
 
 

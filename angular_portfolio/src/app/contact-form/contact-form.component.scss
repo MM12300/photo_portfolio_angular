@@ -1,4 +1,11 @@
 form{
     display: flex;
     flex-direction: column;
+    padding : 20px;
+    mat-form-field{
+        padding-bottom:5px;
+    }
+    mat-error{
+        font-size:11px;
+    }
 }
