@@ -2,9 +2,15 @@
     a {
         color: $text-primary;
     }
+    p{
+        color: $text-secondary;
+    }
+    h3{
+        color:$text-secondary;
+    }
     .section-title {
         color:$text-secondary;
-        border-bottom: 3px solid $background-secondary;
+        border-bottom: 3px solid $text-secondary;
     }
     app-root{
         background-color:$background-primary;

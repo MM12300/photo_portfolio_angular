@@ -1,4 +1,9 @@
 @media (min-width: 100px) and (max-width: 968px) {
+    app-about{
+        section{
+            width: 100% !important;
+        }
+    }
     app-header{
         .header-top{
             padding: 0 !important;
@@ -42,7 +47,7 @@
     app-gallery{
         .grid-portrait, .grid-landscape {
             grid-template-columns: 1fr !important;
-            grid-gap: 8px !important;
+            grid-gap: 40px !important;
             margin: 0 !important;
             padding: 0 !important;
         }
@@ -69,5 +74,6 @@
     }
     .section-title{
         padding:3% 0 0 5% !important;
+        margin: 0 !important;
     }
 }
