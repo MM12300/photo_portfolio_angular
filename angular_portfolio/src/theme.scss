@@ -34,7 +34,10 @@
     app-card-ig {
         article {
             color: $text-primary;
-            background-color: $background-secondary
+            background-color: $background-secondary;
+            p{
+                color: $text-primary;
+            }
         }
     }
     app-card-photo {

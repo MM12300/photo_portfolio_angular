@@ -1,5 +1,9 @@
 @media (min-width: 100px) and (max-width: 968px) {
     app-about{
+        #about-cover{
+            padding: 0 !important;
+            width: 100% !important;
+        }
         section{
             width: 100% !important;
         }

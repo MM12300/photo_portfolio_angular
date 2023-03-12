@@ -1,3 +1,9 @@
+#about-cover{
+    display: block;
+    margin: auto;
+    padding : 20px 0;
+    width: 50%;
+}
 section{
     display:flex;
     flex-direction: column;
@@ -15,4 +21,11 @@ h3{
 }
 .section-title-wide{
     margin:0;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    img{
+        width: 50px;
+    }
 }
