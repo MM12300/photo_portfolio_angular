@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {Component, OnInit} from "@angular/core";
 import {Photo} from "../interfaces/photo";
 import {PhotosService} from "../services/photos.service";
 
@@ -7,7 +7,7 @@ import {PhotosService} from "../services/photos.service";
     templateUrl: "./home.component.html",
     styleUrls: ["./home.component.scss"]
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
     public homePhotos: Photo[];
 
     constructor(private _photoService: PhotosService) {
@@ -15,4 +15,10 @@ export class HomeComponent {
             this.homePhotos = res;
         });
     }
+
+    ngOnInit(): void {
+        this._photoService.test();
+    }
+
+
 }

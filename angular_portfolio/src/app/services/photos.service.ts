@@ -18,4 +18,11 @@ export class PhotosService {
     public getPhotos(category: string): Observable<Photo[]> {
         return this.http.get<Photo[]>(`assets/data/photos/${category}.json`).pipe();
     }
+
+    public test(): void{
+        console.log('test');
+        this.http.get('http://localhost:5000/candy').subscribe(data=>{
+            console.log(data)
+        })
+    }
 }
