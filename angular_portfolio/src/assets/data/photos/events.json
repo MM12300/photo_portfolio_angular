@@ -1,65 +1,76 @@
 [
     {
+        "id": "0",
         "title": "adrian atma",
         "src": "assets/photos/events/Events-001.jpg",
         "category": "events",
         "format": "portrait"
     },
     {
+        "id": "1",
         "title": "bengaluru",
         "src": "assets/photos/events/Events-002.jpg",
         "category": "events",
         "format": "portrait"
     },
     {
+        "id": "2",
         "title": "chateau h",
         "src": "assets/photos/events/Events-003.jpg",
         "category": "events",
         "format": "portrait"
     },
     {
+        "id": "3",
         "title": "kiff&scratch 1",
         "src": "assets/photos/events/Events-004.jpg",
         "category": "events",
         "format": "portrait"
     },
     {
+        "id": "4",
         "title": "pablo killombo",
         "src": "assets/photos/events/Events-005.jpg",
         "category": "events",
         "format": "portrait"
     },
     {
+        "id": "5",
         "title": "mister freeze",
         "src": "assets/photos/events/Events-006.jpg",
         "category": "events",
         "format": "portrait"
     },
     {
+        "id": "6",
         "title": "tout'en'vrac",
         "src": "assets/photos/events/Events-007.jpg",
         "category": "events",
         "format": "portrait"
     },
     {
+        "id": "7",
         "title": "aequinoxes",
         "src": "assets/photos/events/Events-008.jpg",
         "category": "events",
         "format": "portrait"
     },
     {
+        "id": "8",
         "title": "kiff&scratch 2",
         "src": "assets/photos/events/Events-009.jpg",
         "category": "events",
         "format": "landscape"
     },
     {
+        "id": "9",
         "title": "toulouse",
         "src": "assets/photos/events/Events-010.jpg",
         "category": "events",
         "format": "landscape"
     },
     {
+        "id": "10",
         "title": "festival",
         "src": "assets/photos/events/Events-011.jpg",
         "category": "events",
