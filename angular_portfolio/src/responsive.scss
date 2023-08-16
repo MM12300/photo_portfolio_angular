@@ -66,12 +66,12 @@
             font-size: 36px;
         }
         app-card-photo{
-            scroll-snap-align: center;
+            scroll-snap-align: start;
             scroll-snap-stop: always;
         }
         .grid-portrait, .grid-landscape {
             grid-template-columns: 1fr !important;
-            grid-gap: 40px !important;
+            grid-gap: 60px !important;
             margin: 0 !important;
             padding: 0 !important;
         }
