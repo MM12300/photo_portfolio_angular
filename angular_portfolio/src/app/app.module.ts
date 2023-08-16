@@ -18,6 +18,7 @@ import { ContactFormComponent } from "./contact-form/contact-form.component";
 import {ReactiveFormsModule} from "@angular/forms";
 import {AngularMaterialModule} from "./angularMaterial.module";
 import {MatRippleModule} from "@angular/material/core";
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
     declarations: [
@@ -43,6 +44,7 @@ import {MatRippleModule} from "@angular/material/core";
         MatRippleModule,
     ],
     providers: [
+        {provide: LocationStrategy, useClass: HashLocationStrategy}
     ],
     bootstrap: [AppComponent]
 })
