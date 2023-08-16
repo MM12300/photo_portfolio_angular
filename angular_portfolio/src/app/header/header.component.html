@@ -1,6 +1,7 @@
 <header>
     <div class="header-top">
         <a [routerLink]="['/']"><h1>ψ MATTHIEU M ψ PHOTOGRAPHIE ψ</h1></a>
+        <p class="gallery-title">{{this.galleryTitle}}</p>
         <details #details>
             <div class="menu">
                 <a [routerLink]="['/']" (click)="closeDetails()">Accueil</a>
