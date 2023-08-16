@@ -1,4 +1,7 @@
 @media (min-width: 100px) and (max-width: 968px) {
+    html {
+        scroll-snap-type: y mandatory;
+    }
     app-about{
         #about-cover{
             padding: 0 !important;
@@ -11,7 +14,7 @@
     app-header{
         height: 4rem;
         .header-top{
-            padding: 0 !important;
+            padding: 0 0 10px 0 !important;
             img{
                 width: 50px !important;
                 height: 50px !important;
@@ -26,7 +29,16 @@
             font-size: 24px !important;
             padding: 15px !important;
         }
-
+        .gallery-title{
+            display: inline !important;
+            font-family: modernsans-, serif !important;
+            text-transform: uppercase !important;
+            text-align: center !important;
+            border-top: 1px solid white !important;
+            margin: 0 10px 0 10px !important;
+            font-size: 1.5rem !important;
+            padding: 10px !important;
+        }
     }
     app-home{
         .header-bottom {
@@ -50,6 +62,13 @@
         }
     }
     app-gallery{
+        h2{
+            font-size: 36px;
+        }
+        app-card-photo{
+            scroll-snap-align: center;
+            scroll-snap-stop: always;
+        }
         .grid-portrait, .grid-landscape {
             grid-template-columns: 1fr !important;
             grid-gap: 40px !important;
@@ -58,6 +77,9 @@
         }
         .grid-portrait img, .grid-landscape img{
             width: 100% !important;
+        }
+        .section-title{
+            display: none;
         }
     }
     app-ig-feed{
@@ -79,9 +101,5 @@
                 font-size: 12px !important;
             }
         }
-    }
-    .section-title{
-        padding:3% 0 0 5% !important;
-        margin: 0 0 10px 0 !important;
     }
 }

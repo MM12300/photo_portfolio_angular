@@ -36,12 +36,3 @@
         }
     }
 }
-
-html {
-    scroll-snap-type: y mandatory;
-}
-
-app-card-photo{
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
-}

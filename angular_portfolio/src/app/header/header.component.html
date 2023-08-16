@@ -1,7 +1,6 @@
 <header>
     <div class="header-top">
         <a [routerLink]="['/']"><h1>ψ MATTHIEU M ψ PHOTOGRAPHIE ψ</h1></a>
-        <p class="gallery-title">{{this.galleryTitle}}</p>
         <details #details>
             <div class="menu">
                 <a [routerLink]="['/']" (click)="closeDetails()">Accueil</a>
@@ -11,5 +10,6 @@
             <summary><img src="assets/icons/menu.svg" alt="menuicon"></summary>
         </details>
     </div>
+    <div class="gallery-title">{{this.galleryTitle}}</div>
 </header>
 
