@@ -36,7 +36,7 @@
             text-align: center !important;
             border-top: 1px solid white !important;
             margin: 0 10px 0 10px !important;
-            font-size: 1.5rem !important;
+            font-size: 1rem !important;
             padding: 10px !important;
         }
     }
@@ -65,10 +65,13 @@
         h2{
             font-size: 36px;
         }
-        app-card-photo{
-            scroll-snap-align: start;
-            scroll-snap-stop: always;
-        }
+        //dialog{
+        //    scroll-snap-type: y mandatory;
+            app-card-photo{
+                scroll-snap-align: center;
+                scroll-snap-stop: always;
+            }
+        //}
         .grid-portrait, .grid-landscape {
             grid-template-columns: 1fr !important;
             grid-gap: 60px !important;
