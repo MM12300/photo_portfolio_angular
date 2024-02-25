@@ -10,13 +10,18 @@
         "category": "saddhus"
     },
     {
-        "title": "Setmana Santa",
+        "title": "Setmana Santa 2023",
         "src": "assets/photos/home/Accueil-003.jpg",
-        "category": "setmana-santa"
+        "category": "setmana-santa2023"
     },
     {
         "title": "Events",
         "src": "assets/photos/home/Accueil-004.jpg",
         "category": "events"
+    },
+    {
+        "title": "Setmana Santa 2024",
+        "src": "assets/photos/home/Accueil-005.jpg",
+        "category": "setmana-santa2024"
     }
 ]
