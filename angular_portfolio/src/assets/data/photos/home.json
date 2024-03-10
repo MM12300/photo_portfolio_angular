@@ -23,5 +23,10 @@
         "title": "Setmana Santa 2024",
         "src": "assets/photos/home/Accueil-005.jpg",
         "category": "setmana-santa2024"
+    },
+    {
+        "title": "Expo Églises",
+        "src": "assets/photos/home/eglise-028.jpg",
+        "category": "eglise"
     }
 ]
