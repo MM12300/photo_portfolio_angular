@@ -8,5 +8,5 @@ import {Photo} from "../interfaces/photo";
 })
 
 export class CardHomeComponent {
-    @Input() photo: Photo;
+    @Input() cardData: Photo;
 }

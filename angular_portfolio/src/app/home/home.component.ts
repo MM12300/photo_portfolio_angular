@@ -8,9 +8,13 @@ import {PhotosService} from "../services/photos.service";
     styleUrls: ["./home.component.scss"]
 })
 export class HomeComponent {
+    public galleryPhotos: Photo[];
     public homePhotos: Photo[];
 
     constructor(private _photoService: PhotosService) {
+        this._photoService.getPhotos("gallery").subscribe((res: Photo[]) => {
+            this.galleryPhotos = res;
+        });
         this._photoService.getPhotos("home").subscribe((res: Photo[]) => {
             this.homePhotos = res;
         });
