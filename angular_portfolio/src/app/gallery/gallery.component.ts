@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewEncapsulation} from "@angular/core";
-import {PhotosService} from "../services/photos.service";
+import {DataImportService} from "../services/data-import.service";
 import {Photo} from "../interfaces/photo";
 import {ActivatedRoute, ParamMap} from "@angular/router";
 
@@ -18,7 +18,7 @@ export class GalleryComponent implements OnInit {
     public photoFetched = false;
 
     constructor(
-        private _photoService: PhotosService,
+        private _photoService: DataImportService,
         private route: ActivatedRoute,
     ) {
     }

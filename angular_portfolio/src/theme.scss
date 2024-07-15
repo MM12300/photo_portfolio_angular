@@ -30,6 +30,22 @@
             }
         }
     }
+    app-galleries {
+        .card-gallery{
+            a {
+                color: $text-primary;
+            }
+
+            .card-content {
+                background-color: $background-secondary;
+            }
+
+            .title-bar {
+                background-color: $text-primary;
+            }
+        }
+    }
+
 
     app-card-ig {
         article {

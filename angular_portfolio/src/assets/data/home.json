@@ -1,12 +1,12 @@
 [
     {
-        "title": "Galleries",
+        "title": "À propos",
         "src": "assets/photos/home/Accueil-001.jpg",
-        "category": "gallery"
+        "route": "about"
     },
     {
-        "title": "Saddhus",
+        "title": "Mes Galleries",
         "src": "assets/photos/home/Accueil-002.jpg",
-        "category": "saddhus"
+        "route": "galleries"
     }
 ]

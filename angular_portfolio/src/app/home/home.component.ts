@@ -1,6 +1,7 @@
 import {Component} from "@angular/core";
 import {Photo} from "../interfaces/photo";
-import {PhotosService} from "../services/photos.service";
+import {DataImportService} from "../services/data-import.service";
+import {Section} from "../interfaces/section";
 
 @Component({
     selector: "app-home",
@@ -8,14 +9,10 @@ import {PhotosService} from "../services/photos.service";
     styleUrls: ["./home.component.scss"]
 })
 export class HomeComponent {
-    public galleryPhotos: Photo[];
-    public homePhotos: Photo[];
+    public homePhotos: Section[];
 
-    constructor(private _photoService: PhotosService) {
-        this._photoService.getPhotos("gallery").subscribe((res: Photo[]) => {
-            this.galleryPhotos = res;
-        });
-        this._photoService.getPhotos("home").subscribe((res: Photo[]) => {
+    constructor(private _photoService: DataImportService) {
+        this._photoService.getSections().subscribe((res: Section[]) => {
             this.homePhotos = res;
         });
     }

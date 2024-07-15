@@ -19,6 +19,8 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {AngularMaterialModule} from "./angularMaterial.module";
 import {MatRippleModule} from "@angular/material/core";
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import {CardGalleryComponent} from "./card-gallery/card-gallery.component";
+import {GalleriesComponent} from "./galleries/galleries.component";
 
 @NgModule({
     declarations: [
@@ -27,7 +29,9 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
         FooterComponent,
         HeaderComponent,
         CardHomeComponent,
+        CardGalleryComponent,
         GalleryComponent,
+        GalleriesComponent,
         CardPhotoComponent,
         IgFeedComponent,
         AboutComponent,
