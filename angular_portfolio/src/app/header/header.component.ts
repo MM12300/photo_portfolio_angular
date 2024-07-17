@@ -24,7 +24,7 @@ export class HeaderComponent {
                 private route: ActivatedRoute,
                 private location: Location,
                 private router: Router) {
-        this._photoService.getPhotos("home").subscribe((res: Photo[]) => {
+        this._photoService.getPhotos("gallery").subscribe((res: Photo[]) => {
             this.categories = res.map(photo => photo.category);
         });
 
