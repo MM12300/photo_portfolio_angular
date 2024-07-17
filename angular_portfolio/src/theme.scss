@@ -28,6 +28,24 @@
             .title-bar {
                 background-color: $text-primary;
             }
+            .subtitle {
+                color : $text-primary;
+            }
+        }
+    }
+    app-card-gallery {
+        .card-gallery {
+            a {
+                color: $text-primary;
+            }
+
+            .card-content {
+                background-color: $background-secondary;
+            }
+
+            .title-bar {
+                background-color: $text-primary;
+            }
         }
     }
     app-galleries {

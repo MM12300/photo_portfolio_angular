@@ -1,11 +1,13 @@
 [
     {
         "title": "À propos",
+        "subtitle" : "Apprennez à me connaître, contactez moi, collaborons !",
         "src": "assets/photos/home/Accueil-001.jpg",
         "route": "about"
     },
     {
         "title": "Mes Galleries",
+        "subtitle": "Découvrez mes photos : concerts, voyages et bien d'autres !",
         "src": "assets/photos/home/Accueil-002.jpg",
         "route": "galleries"
     }

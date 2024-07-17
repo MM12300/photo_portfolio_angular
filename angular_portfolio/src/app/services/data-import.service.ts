@@ -32,6 +32,6 @@ export class DataImportService {
      * Get gallery title data (.json)
      */
     public getSections(): Observable<Section[]> {
-        return this.http.get<Section[]>(`assets/data/home.json`).pipe();
+        return this.http.get<Section[]>(`assets/data/sections.json`).pipe();
     }
 }
