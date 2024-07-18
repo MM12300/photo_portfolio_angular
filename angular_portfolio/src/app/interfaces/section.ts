@@ -3,4 +3,5 @@ export interface Section{
     subtitle: string,
     src: string,
     route: string,
+    category : string,
 }

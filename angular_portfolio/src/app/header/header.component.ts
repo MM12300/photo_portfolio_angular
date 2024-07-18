@@ -4,6 +4,7 @@ import {DataImportService} from "../services/data-import.service";
 import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
 import {GalleryTitle} from "../interfaces/gallery";
 import {Location} from "@angular/common";
+import {Section} from "../interfaces/section";
 
 
 @Component({
@@ -15,36 +16,20 @@ export class HeaderComponent {
     @ViewChild("details") details: ElementRef;
 
     public categories: string[];
-    public galleryTitles: GalleryTitle[];
-    public galleryTitle: string;
-    public category: string;
+    public sections: Section[];
 
-    constructor(private _photoService: DataImportService,
-                private renderer: Renderer2,
-                private route: ActivatedRoute,
-                private location: Location,
-                private router: Router) {
-        this._photoService.getPhotos("gallery").subscribe((res: Photo[]) => {
-            this.categories = res.map(photo => photo.category);
+    constructor(
+        private _photoService: DataImportService,
+        private renderer: Renderer2
+    ) {
+        this._photoService.getSections().subscribe((res: Section[]) => {
+            this.categories = res.map(section => section.category);
+            this.sections = res;
         });
 
         this.renderer.listen('window', 'click', () => {
             this.closeDetails();
         });
-
-        this.router.events.subscribe((event) => {
-                if (event instanceof NavigationEnd) {
-                    const url = this.location.path();
-                    this.category = this.trimAfterLastSlashAndGetLastPart(url);
-                    this._photoService.getGalleryTitle().subscribe(titles => {
-                        this.galleryTitles = titles
-                        if (this.galleryTitles.filter(title => title.url === this.category)[0] !== undefined) {
-                            this.galleryTitle = this.galleryTitles.filter(title => title.url === this.category)[0].title;
-                        }
-                    });
-                }
-            }
-        );
     }
 
     public closeDetails(): void {

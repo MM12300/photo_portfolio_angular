@@ -1,5 +1,6 @@
 import {Component, Input} from "@angular/core";
 import {Photo} from "../interfaces/photo";
+import {Gallery} from "../interfaces/gallery";
 
 @Component({
     selector: "app-card-gallery",
@@ -8,5 +9,5 @@ import {Photo} from "../interfaces/photo";
 })
 
 export class CardGalleryComponent {
-    @Input() cardData: Photo;
+    @Input() cardData: Gallery;
 }

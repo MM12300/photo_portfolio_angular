@@ -4,7 +4,7 @@
         <details #details>
             <div class="menu">
                 <a [routerLink]="['/']" (click)="closeDetails()">Accueil</a>
-                <a *ngFor="let category of categories" [routerLink]="['/gallery/', category]" (click)="closeDetails()">{{category}}</a>
+                <a *ngFor="let section of sections" [routerLink]="[section.route]" (click)="closeDetails()">{{section.category}}</a>
                 <a href="mailto: contact@matthieu-m.com">Contact</a>
             </div>
             <summary><img src="assets/icons/menu.svg" alt="menuicon"></summary>

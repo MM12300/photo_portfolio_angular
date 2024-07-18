@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {Photo} from "../interfaces/photo";
 import {DataImportService} from "../services/data-import.service";
+import {Gallery} from "../interfaces/gallery";
 
 @Component({
   selector: 'app-galleries',
@@ -9,10 +10,11 @@ import {DataImportService} from "../services/data-import.service";
 })
 export class GalleriesComponent {
     public galleryPhotos: Photo[];
+    public galleries: Gallery[];
 
     constructor(private _photoService: DataImportService) {
-        this._photoService.getPhotos("gallery").subscribe((res: Photo[]) => {
-            this.galleryPhotos = res;
+        this._photoService.getGalleries().subscribe((res: Gallery[]) => {
+            this.galleries = res;
         });
     }
 }
