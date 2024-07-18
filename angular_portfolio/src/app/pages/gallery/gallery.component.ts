@@ -1,6 +1,6 @@
 import {Component, OnInit, ViewEncapsulation} from "@angular/core";
-import {DataImportService} from "../services/data-import.service";
-import {Photo} from "../interfaces/photo";
+import {DataImportService} from "../../services/data-import.service";
+import {Photo} from "../../interfaces/photo";
 import {ActivatedRoute, ParamMap} from "@angular/router";
 
 

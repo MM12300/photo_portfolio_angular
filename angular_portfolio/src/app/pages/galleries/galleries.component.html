@@ -1,7 +1,6 @@
 <main>
     <h2 class="section-title">Galeries</h2>
-    <button (click)="this._utilitiesService.goBack()">ALLO</button>
-
+    <app-return-button text="Retour"/>
     <div class="grid-home">
         <app-card-gallery *ngFor="let gallery of galleries" [cardData]="gallery"></app-card-gallery>
     </div>

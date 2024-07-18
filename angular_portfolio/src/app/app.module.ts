@@ -9,7 +9,7 @@ import {FooterComponent} from "./layout/footer/footer.component";
 import {HeaderComponent} from "./layout/header/header.component";
 import {CardHomeComponent} from "./cards/card-home/card-home.component";
 import { HttpClientModule} from "@angular/common/http";
-import {GalleryComponent} from "./gallery/gallery.component";
+import {GalleryComponent} from "./pages/gallery/gallery.component";
 import {CardPhotoComponent} from "./cards/card-photo/card-photo.component";
 import { IgFeedComponent } from "./ig-feed/ig-feed.component";
 import { AboutComponent } from "./pages/about/about.component";
@@ -18,9 +18,10 @@ import { ContactFormComponent } from "./contact-form/contact-form.component";
 import {ReactiveFormsModule} from "@angular/forms";
 import {AngularMaterialModule} from "./angularMaterial.module";
 import {MatRippleModule} from "@angular/material/core";
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import {HashLocationStrategy, LocationStrategy, NgOptimizedImage} from '@angular/common';
 import {CardGalleryComponent} from "./cards/card-gallery/card-gallery.component";
 import {GalleriesComponent} from "./pages/galleries/galleries.component";
+import {ReturnButtonComponent} from "./return-button/return-button.component";
 
 @NgModule({
     declarations: [
@@ -37,6 +38,7 @@ import {GalleriesComponent} from "./pages/galleries/galleries.component";
         AboutComponent,
         CardIgComponent,
         ContactFormComponent,
+        ReturnButtonComponent,
     ],
     imports: [
         BrowserModule,
@@ -46,6 +48,7 @@ import {GalleriesComponent} from "./pages/galleries/galleries.component";
         ReactiveFormsModule,
         AngularMaterialModule,
         MatRippleModule,
+        NgOptimizedImage,
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy}
