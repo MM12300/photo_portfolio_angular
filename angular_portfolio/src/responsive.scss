@@ -133,4 +133,9 @@
             margin:0 !important;
         }
     }
+    app-galleries{
+        .grid-home {
+            grid-template-columns: 1fr !important;
+        }
+    }
 }
