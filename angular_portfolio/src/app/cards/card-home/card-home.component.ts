@@ -1,6 +1,6 @@
 import {Component, Input} from "@angular/core";
-import {Photo} from "../interfaces/photo";
-import {Section} from "../interfaces/section";
+import {Photo} from "../../interfaces/photo";
+import {Section} from "../../interfaces/section";
 
 @Component({
     selector: "app-card-home",

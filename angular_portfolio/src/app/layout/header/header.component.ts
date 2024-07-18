@@ -1,10 +1,10 @@
 import {Component, ElementRef, Renderer2, ViewChild} from "@angular/core";
-import {Photo} from "../interfaces/photo";
-import {DataImportService} from "../services/data-import.service";
+import {Photo} from "../../interfaces/photo";
+import {DataImportService} from "../../services/data-import.service";
 import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
-import {GalleryTitle} from "../interfaces/gallery";
+import {GalleryTitle} from "../../interfaces/gallery";
 import {Location} from "@angular/common";
-import {Section} from "../interfaces/section";
+import {Section} from "../../interfaces/section";
 
 
 @Component({

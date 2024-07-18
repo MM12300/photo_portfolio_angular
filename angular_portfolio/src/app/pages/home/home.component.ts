@@ -1,7 +1,8 @@
 import {Component} from "@angular/core";
-import {Photo} from "../interfaces/photo";
-import {DataImportService} from "../services/data-import.service";
-import {Section} from "../interfaces/section";
+import {Photo} from "../../interfaces/photo";
+import {DataImportService} from "../../services/data-import.service";
+import {Section} from "../../interfaces/section";
+import {UtilitiesService} from "../../services/utilities.service";
 
 @Component({
     selector: "app-home",
@@ -11,7 +12,9 @@ import {Section} from "../interfaces/section";
 export class HomeComponent {
     public homePhotos: Section[];
 
-    constructor(private _photoService: DataImportService) {
+    constructor(
+        private _photoService: DataImportService,
+    ) {
         this._photoService.getSections().subscribe((res: Section[]) => {
             this.homePhotos = res;
         });
