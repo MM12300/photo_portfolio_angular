@@ -130,12 +130,37 @@
     }
     app-footer{
         footer{
-            margin:0 !important;
+            margin:10px 0 0 0 !important;
         }
     }
     app-galleries{
         .grid-home {
             grid-template-columns: 1fr !important;
+            margin: 0 !important;
+            padding: 0 !important;
         }
+    }
+    app-card-gallery {
+        width : 100% !important;
+        .card-gallery {
+            .card-content{
+                width: 100% !important;
+                padding : 0 !important;
+                h2{
+                    a {
+                        font-size: 28px !important;
+                        padding: 20px 0 5px 0;
+                    }
+                }
+            }
+        }
+        img {
+            width: 80vw !important;
+            scroll-snap-align: center;
+            scroll-snap-stop: always;
+        }
+    }
+    app-return-button{
+        display:none !important;
     }
 }
