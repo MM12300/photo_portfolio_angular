@@ -106,7 +106,14 @@
             background-color: $background-secondary;
         }
     }
-
+    app-about{
+        main{
+            background-color: $background-secondary
+        }
+        h3,p{
+            color:$text-primary
+        }
+    }
 
 }
 

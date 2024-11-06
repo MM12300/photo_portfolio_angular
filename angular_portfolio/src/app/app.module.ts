@@ -27,8 +27,6 @@ import {ReturnButtonComponent} from "./return-button/return-button.component";
     declarations: [
         AppComponent,
         HomeComponent,
-        FooterComponent,
-        HeaderComponent,
         CardHomeComponent,
         CardGalleryComponent,
         GalleryComponent,
@@ -39,6 +37,8 @@ import {ReturnButtonComponent} from "./return-button/return-button.component";
         CardIgComponent,
         ContactFormComponent,
         ReturnButtonComponent,
+        HeaderComponent,
+        FooterComponent
     ],
     imports: [
         BrowserModule,
