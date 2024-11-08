@@ -1,3 +1,8 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+}
+
 #about-cover {
     display: block;
     margin: auto;
@@ -7,19 +12,18 @@
 
 main {
     margin: 10px;
-    padding: 10% 5%;
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 section {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 25vw;
     padding-bottom: 30px;
     border: 1px solid white;
-}
-
-section:nth-child(2), section:nth-child(3) {
-    margin-top: 10%;
 }
 
 p {
@@ -35,7 +39,7 @@ h3 {
     padding-left: 15px;
     padding-bottom: 5px;
     font-family: "amaticSC", serif;
-    font-size: 32px;
+    font-size: 28px;
     border-bottom: 1px solid #FFFFFF;
 }
 
@@ -52,38 +56,51 @@ h3 {
     }
 }
 
-.header-bottom-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: black;
-    padding-bottom: 20px;
-}
+//.header-bottom-div {
+//    display: flex;
+//    flex-direction: row;
+//    justify-content: center;
+//    background-color: black;
+//    padding-bottom: 20px;
+//}
 
-.header-bottom {
-    width: 30%;
-}
+//.header-bottom {
+//    margin-top: 1%;
+//    margin-bottom: 2%;
+//    width: 30%;
+//}
 
 .about-title {
     display: flex;
     flex-direction: row;
 }
-#icon-camera{
-    margin:auto;
+
+#icon-camera {
+    margin: auto;
     width: 150px;
 }
-#icon-landscape{
-    width: 250px;
+
+#icon-landscape {
+    width: 200px;
     margin: auto;
 }
-#icon-mail{
+
+#icon-mail {
     width: 50px;
 }
-#icon-instagram{
+
+#icon-instagram {
     width: 50px;
 }
-section:last-of-type div:last-of-type{
+
+section:last-of-type div:last-of-type {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
