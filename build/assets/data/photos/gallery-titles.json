@@ -1,0 +1,26 @@
+[
+    {
+        "url": "events",
+        "title" : "Events"
+    },
+    {
+        "url": "expo",
+        "title" : "Expo India"
+    },
+    {
+        "url": "saddhus",
+        "title" : "Saddhus"
+    },
+    {
+        "url": "setmana-santa",
+        "title" : "Setmana Santa 2023"
+    },
+    {
+        "url": "setmana-santa2024",
+        "title" : "Setmana Santa 2024"
+    },
+    {
+        "url": "eglise",
+        "title" : "Églises"
+    }
+]
