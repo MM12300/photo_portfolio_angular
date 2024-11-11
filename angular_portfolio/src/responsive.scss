@@ -14,6 +14,7 @@
 
         section {
             width: 100% !important;
+            padding-bottom: 30px !important;
         }
         section:nth-child(2), section:nth-child(3) {
             margin-top: 10% !important;
@@ -85,7 +86,7 @@
         }
 
         .card-content:hover h2 a, .card-content h2 a {
-            font-size: 28px !important;
+            font-size: 38px !important;
         }
 
         .card-home-div img {
@@ -167,7 +168,7 @@
                 padding : 0 !important;
                 h2{
                     a {
-                        font-size: 28px !important;
+                        font-size: 38px !important;
                         padding: 20px 0 5px 0;
                     }
                 }
