@@ -23,9 +23,6 @@
             flex-direction: column !important;
             justify-content: initial !important;
         }
-        //.header-bottom-div{
-        //    display: none !important;
-        //}
         #icon-landscape {
             width: 250px !important;
         }
@@ -70,11 +67,7 @@
         }
     }
     app-home {
-        //.header-bottom {
-        //    width: 100% !important;
-        //}
-
-        main {
+         main {
             .grid-home {
                 grid-template-columns: 1fr !important;
             }
@@ -119,9 +112,8 @@
         .grid-portrait img, .grid-landscape img {
             width: 100% !important;
         }
-
         .section-title {
-            display: none;
+            margin: 0 auto 2% 10% !important;
         }
     }
     app-ig-feed {

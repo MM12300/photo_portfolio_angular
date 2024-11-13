@@ -38,7 +38,7 @@ import {ReturnButtonComponent} from "./return-button/return-button.component";
         ContactFormComponent,
         ReturnButtonComponent,
         HeaderComponent,
-        FooterComponent
+        FooterComponent,
     ],
     imports: [
         BrowserModule,
