@@ -1,0 +1,3 @@
+- Ajouter une mini-liste des photos sous la photo d'une galerie pour inciter à cliquer dessus.
+- Ajouter le titre d'une galerie sur mobile
+- Carousel vue pc
