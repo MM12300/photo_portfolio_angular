@@ -3,8 +3,10 @@
         <h2><a [routerLink]="[cardData.route]">{{cardData.title}}</a></h2>
         <div class="title-bar"></div>
         <div class="card-home-div">
-            <a [routerLink]="[cardData.route]"><img class="landscape" src="{{cardData.src}}"
-                                                                    alt="testimage"></a>
+            <a [routerLink]="[cardData.route]">
+                <img class="landscape" (load)="test()" src="{{cardData.src}}" alt="testimage">
+                <div #xxxx>YOYOYOYOY</div>
+            </a>
         </div>
         <div>
             <p class="subtitle">{{cardData.subtitle}}</p>

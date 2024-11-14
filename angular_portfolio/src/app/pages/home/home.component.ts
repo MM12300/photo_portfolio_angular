@@ -1,8 +1,6 @@
 import {Component} from "@angular/core";
-import {Photo} from "../../interfaces/photo";
 import {DataImportService} from "../../services/data-import.service";
 import {Section} from "../../interfaces/section";
-import {UtilitiesService} from "../../services/utilities.service";
 
 @Component({
     selector: "app-home",
