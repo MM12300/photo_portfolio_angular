@@ -1,14 +1,14 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input} from "@angular/core";
 import {UtilitiesService} from "../services/utilities.service";
 
 @Component({
-  selector: 'app-return-button',
-  templateUrl: './return-button.component.html',
-  styleUrls: ['./return-button.component.scss']
+  selector: "app-return-button",
+  templateUrl: "./return-button.component.html",
+  styleUrls: ["./return-button.component.scss"]
 })
 
 export class ReturnButtonComponent {
-    @Input() text:string;
+    @Input() public text:string;
 
     constructor(
         protected _utilitiesService: UtilitiesService,

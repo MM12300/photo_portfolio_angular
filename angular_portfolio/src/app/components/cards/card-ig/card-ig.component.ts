@@ -10,11 +10,11 @@ import {igMedia} from "../../../interfaces/instagram";
 
 export class CardIgComponent implements OnInit{
 
-    @Input() post:igMedia;
+    @Input() public post:igMedia;
     public postTitle:string;
     public postHashtags:string;
 
-    ngOnInit(): void {
+    public ngOnInit(): void {
         const captionsplitted: string[] = this.splitCaption(this.post.caption);
         this.postTitle = captionsplitted[0];
         this.postHashtags = captionsplitted[1];

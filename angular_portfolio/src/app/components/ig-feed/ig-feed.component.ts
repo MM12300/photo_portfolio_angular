@@ -15,7 +15,7 @@ export class IgFeedComponent implements OnInit{
 
     }
 
-    ngOnInit(): void {
+    public ngOnInit(): void {
         this._igService.getIgUserInfos().subscribe(user=>{
             this._igService.getMediaArray(user).subscribe(mediaIncomplete =>{
                 const mediaIds = mediaIncomplete.data.map(data => data.id);

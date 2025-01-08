@@ -1,11 +1,6 @@
 import {Component, ElementRef, Renderer2, ViewChild} from "@angular/core";
-import {Photo} from "../../interfaces/photo";
 import {DataImportService} from "../../services/data-import.service";
-import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
-import {GalleryTitle} from "../../interfaces/gallery";
-import {Location} from "@angular/common";
 import {Section} from "../../interfaces/section";
-
 
 @Component({
     selector: "app-header",
@@ -13,7 +8,7 @@ import {Section} from "../../interfaces/section";
     styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent {
-    @ViewChild("details") details: ElementRef;
+    @ViewChild("details") public details: ElementRef;
 
     public categories: string[];
     public sections: Section[];
@@ -27,21 +22,12 @@ export class HeaderComponent {
             this.sections = res;
         });
 
-        this.renderer.listen('window', 'click', () => {
+        this.renderer.listen("window", "click", () => {
             this.closeDetails();
         });
     }
 
     public closeDetails(): void {
         this.details.nativeElement.removeAttribute("open");
-    }
-
-    public trimAfterLastSlashAndGetLastPart(url) {
-        const lastSlashIndex = url.lastIndexOf("/");
-        if (lastSlashIndex == -1) {
-            return "";
-        } else {
-            return url.slice(lastSlashIndex + 1);
-        }
     }
 }

@@ -1,5 +1,4 @@
 import {Component, Input} from "@angular/core";
-import {Photo} from "../../../interfaces/photo";
 import {Gallery} from "../../../interfaces/gallery";
 
 @Component({
@@ -9,5 +8,5 @@ import {Gallery} from "../../../interfaces/gallery";
 })
 
 export class CardGalleryComponent {
-    @Input() cardData: Gallery;
+    @Input() public cardData: Gallery;
 }

@@ -1,7 +1,7 @@
 {
     "root": true,
     "ignorePatterns": [
-        "projects/**/*"
+        "**/dist/*"
     ],
     "overrides": [
         {
@@ -31,7 +31,22 @@
                         "style": "kebab-case"
                     }
                 ],
-                "@typescript-eslint/no-inferrable-types": "off"
+                "@typescript-eslint/no-inferrable-types": "off",
+                "semi": ["error", "always"],
+                "quotes": ["error", "double"],
+                "camelcase": "error",
+                "@typescript-eslint/explicit-member-accessibility": [
+                    "warn",
+                    {
+                        "overrides": {
+                            "accessors": "off",
+                            "constructors": "no-public",
+                            "methods": "explicit",
+                            "properties": "explicit",
+                            "parameterProperties": "explicit"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -41,7 +56,8 @@
             "extends": [
                 "plugin:@angular-eslint/template/recommended"
             ],
-            "rules": {}
+            "rules": {
+            }
         }
     ]
 }

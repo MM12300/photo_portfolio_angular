@@ -7,7 +7,7 @@ import {DOCUMENT} from "@angular/common";
     styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
-    title = "angular_portfolio";
+    public title = "angular_portfolio";
 
     public theme:string;
 

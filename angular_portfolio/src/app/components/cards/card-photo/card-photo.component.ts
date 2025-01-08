@@ -7,5 +7,5 @@ import {Photo} from "../../../interfaces/photo";
     styleUrls: ["./card-photo.component.scss"]
 })
 export class CardPhotoComponent {
-    @Input() photo: Photo;
+    @Input() public photo: Photo;
 }

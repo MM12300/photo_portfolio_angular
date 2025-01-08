@@ -23,7 +23,7 @@ export class GalleryComponent implements OnInit {
     ) {
     }
 
-    ngOnInit(): void {
+    public ngOnInit(): void {
         this.route.paramMap.subscribe((params: ParamMap) => {
             this.category = params.get("category");
             this.photoFetched = false;

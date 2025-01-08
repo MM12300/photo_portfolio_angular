@@ -18,7 +18,7 @@ import { ContactFormComponent } from "./components/contact-form/contact-form.com
 import {ReactiveFormsModule} from "@angular/forms";
 import {AngularMaterialModule} from "./angularMaterial.module";
 import {MatRippleModule} from "@angular/material/core";
-import {HashLocationStrategy, LocationStrategy, NgOptimizedImage} from '@angular/common';
+import {HashLocationStrategy, LocationStrategy, NgOptimizedImage} from "@angular/common";
 import {CardGalleryComponent} from "./components/cards/card-gallery/card-gallery.component";
 import {GalleriesComponent} from "./components/galleries/galleries.component";
 import {ReturnButtonComponent} from "./return-button/return-button.component";
