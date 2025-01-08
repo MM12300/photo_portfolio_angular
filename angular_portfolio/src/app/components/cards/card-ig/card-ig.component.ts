@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from "@angular/core";
-import {igMedia} from "../../interfaces/instagram";
+import {igMedia} from "../../../interfaces/instagram";
 
 @Component({
     selector: "app-card-ig",

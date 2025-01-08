@@ -1,5 +1,5 @@
 import {Component, ElementRef, Input, OnInit, ViewChild} from "@angular/core";
-import {Section} from "../../interfaces/section";
+import {Section} from "../../../interfaces/section";
 
 @Component({
     selector: "app-card-home",

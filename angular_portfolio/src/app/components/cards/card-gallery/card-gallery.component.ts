@@ -1,6 +1,6 @@
 import {Component, Input} from "@angular/core";
-import {Photo} from "../../interfaces/photo";
-import {Gallery} from "../../interfaces/gallery";
+import {Photo} from "../../../interfaces/photo";
+import {Gallery} from "../../../interfaces/gallery";
 
 @Component({
     selector: "app-card-gallery",

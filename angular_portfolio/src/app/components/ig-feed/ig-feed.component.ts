@@ -1,6 +1,6 @@
 import {Component, OnInit} from "@angular/core";
-import {InstagramService} from "../services/instagram.service";
-import {igMedia} from "../interfaces/instagram";
+import {InstagramService} from "../../services/instagram.service";
+import {igMedia} from "../../interfaces/instagram";
 import {concatMap} from "rxjs";
 
 @Component({
