@@ -178,6 +178,11 @@
         "src": "assets/photos/setmana/Setmana-009.jpg",
         "category": "Setmana Santa",
         "format": "landscape"
+    },
+    {
+        "title": "Dead",
+        "src": "assets/photos/setmana/Setmana-031.jpg",
+        "category": "Setmana Santa",
+        "format": "landscape"
     }
-
 ]
